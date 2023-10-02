@@ -9,6 +9,7 @@
       :original="original"
       :is-lewd="isLewd"
       :is-detail="isDetail"
+      :disable-operation="disableOperation"
       :player-cover="audioPlayerCover"
       :hover-on-cover-play="audioHoverOnCoverPlay" />
     <div
@@ -60,6 +61,7 @@ const props = withDefaults(
     placeholder?: string
     audioPlayerCover?: string
     audioHoverOnCoverPlay?: boolean
+    disableOperation?: boolean
   }>(),
   {
     src: '',
